@@ -20,7 +20,7 @@ export default function HeaderTabs() {
   )
 }
 
-const AppButtons = ({text, btnColor, textColor, activeTab, setActiveTab}) => {
+const AppButtons = ({text, activeTab, setActiveTab}) => {
   const bgColor = activeTab === text ? 'black' : 'white'
   const txtColor = activeTab === text ? 'white' : 'black'
   const onPress = () => {
@@ -48,13 +48,13 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   touchableContainer: {
-    paddingVertical: 6,
+    paddingVertical: 4,
     paddingHorizontal: 16,
       borderRadius: 30
   },
   textContainer: {
     alignItems: 'center',
-    fontSize: 15,
+    fontSize: 16,
     fontWeight: "900"
   }
 });

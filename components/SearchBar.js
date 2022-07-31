@@ -9,6 +9,7 @@ export default function SearchBar() {
   return (
     <View style={styles.mainContainer}>
       <GooglePlacesAutocomplete
+      query={{key: 'AIzaSyBew3Y5Qkb6_Wus4AFusbQkDWbMs8XUKyk'}}
         placeholder='Search'
         styles={styles.placesStyle}
         renderLeftButton={ () => (
@@ -37,7 +38,7 @@ export default function SearchBar() {
 const styles = StyleSheet.create({
     mainContainer: {
       flexDirection: 'row',
-      marginTop: 15
+      marginVertical: 15
     },
     placesStyle: {
         textInput: {
